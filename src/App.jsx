@@ -3,6 +3,7 @@ import Header from './components/Header';
 import ProductForm from './components/ProductForm';
 import ProductList from './components/ProductList';
 import ProductSummary from './components/ProductSummary';
+import ApiProductList from './components/ApiProductList'; // Import komponen Tugas 7
 
 function App() {
   const [products, setProducts] = useState([
@@ -20,6 +21,9 @@ function App() {
       <ProductSummary totalProducts={products.length} />
       <ProductForm onAddProduct={handleAddProduct} />
       <ProductList products={products} />
+      
+      {/* Fitur Tugas 7 */}
+      <ApiProductList />
     </div>
   );
 }
